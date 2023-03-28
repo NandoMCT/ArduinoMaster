@@ -10,6 +10,13 @@ namespace ArduinoMaster
         public Form1()
         {
             InitializeComponent();
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            listCOMPorts();
+            gbOnOff.Enabled = false;
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -69,6 +76,7 @@ namespace ArduinoMaster
                 {
                     serialPort1.PortName = cbPorts.Items[cbPorts.SelectedIndex].ToString();
                     serialPort1.Open();
+                    gbOnOff.Enabled = true;
                 }
                 catch
                 {
@@ -87,6 +95,7 @@ namespace ArduinoMaster
                     serialPort1.Close();
                     cbPorts.Enabled = true;
                     btnConnect.Text = "Conectar";
+                    gbOnOff.Enabled = false;
                 }
                 catch
                 {
@@ -102,5 +111,6 @@ namespace ArduinoMaster
                 serialPort1.Write(txtSend.Text);
             }
         }
+
     }
 }
