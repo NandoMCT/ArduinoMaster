@@ -131,7 +131,7 @@
             // 
             // btnConnect
             // 
-            btnConnect.Location = new Point(254, 30);
+            btnConnect.Location = new Point(271, 30);
             btnConnect.Name = "btnConnect";
             btnConnect.Size = new Size(100, 30);
             btnConnect.TabIndex = 0;
@@ -144,12 +144,12 @@
             cbPorts.FormattingEnabled = true;
             cbPorts.Location = new Point(9, 37);
             cbPorts.Name = "cbPorts";
-            cbPorts.Size = new Size(91, 23);
+            cbPorts.Size = new Size(107, 23);
             cbPorts.TabIndex = 1;
             // 
             // btnSend
             // 
-            btnSend.Location = new Point(254, 66);
+            btnSend.Location = new Point(271, 66);
             btnSend.Name = "btnSend";
             btnSend.Size = new Size(100, 30);
             btnSend.TabIndex = 2;
